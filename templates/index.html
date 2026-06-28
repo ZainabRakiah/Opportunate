@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opportunate - Internship Matcher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1>Opportunate</h1>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="dialog-box" id="dialog-box">
+            <h2>What's your career interest?</h2>
+            <input type="text" id="career-input" placeholder="e.g., web development" />
+            <button id="submit-interest">Submit</button>
+            <button id="dont-know">I Don't Know</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Opportunate</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
